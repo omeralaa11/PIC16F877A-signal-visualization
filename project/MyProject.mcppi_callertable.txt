@@ -1,0 +1,13 @@
+main
+	PWM1_Init
+	PWM1_Set_Duty
+		Mul_16x16_U
+	UART1_Init
+	PWM1_Start
+	ADC_Read
+		Delay_22us
+	WordToStr
+		Div_16x16_U
+	UART1_Write_Text
+		UART1_Write
+	UART1_Write
